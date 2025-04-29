@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1kx1tn3vey6w"]
+
+[ext_resource type="Script" path="res://Scripts/dialogue_merchant.gd" id="1_5p5do"]
+[ext_resource type="Texture2D" uid="uid://cvc4sv5s8y1lb" path="res://Assets/Misc/dialogue box texture.png" id="2_n6mjj"]
+
+[node name="Merchant dialogue" type="CanvasLayer"]
+script = ExtResource("1_5p5do")
+d_file = "res://Dialogue/merchant_text.json"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+visible = false
+offset_left = 450.0
+offset_top = 648.0
+offset_right = 1521.0
+offset_bottom = 957.0
+texture = ExtResource("2_n6mjj")
+region_rect = Rect2(0.830402, 0, 14.3402, 16)
+
+[node name="Name" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 29.0
+offset_right = 255.0
+offset_bottom = 80.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 34
+text = "Name"
+
+[node name="Chat" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 73.0
+offset_right = 990.0
+offset_bottom = 260.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 34
+text = "Hello newcomer"

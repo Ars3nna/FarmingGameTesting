@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://damufuo6c3wby"]
+
+[ext_resource type="Script" path="res://Scripts/to_wilderness_popup_menu.gd" id="1_cvli5"]
+
+[node name="To wilderness popup menu" type="Control"]
+process_mode = 3
+z_index = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_top = 5.0
+offset_right = -840.0
+offset_bottom = -413.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cvli5")
+
+[node name="Wilderness dialogue" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -34.0
+offset_top = 125.0
+offset_right = 350.0
+offset_bottom = 298.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Wilderness dialogue"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 372.0
+offset_bottom = 173.0
+theme_override_font_sizes/normal_font_size = 30
+
+[node name="Enter button" type="Button" parent="Wilderness dialogue"]
+layout_mode = 0
+offset_left = 98.0
+offset_top = -184.0
+offset_right = 261.0
+offset_bottom = -127.0
+theme_override_font_sizes/font_size = 35
+text = "Enter"
+
+[node name="Exit button" type="Button" parent="Wilderness dialogue"]
+layout_mode = 0
+offset_left = 98.0
+offset_top = -108.0
+offset_right = 261.0
+offset_bottom = -51.0
+theme_override_font_sizes/font_size = 35
+text = "Leave
+"
+
+[connection signal="pressed" from="Wilderness dialogue/Enter button" to="." method="_on_enter_button_pressed"]
+[connection signal="pressed" from="Wilderness dialogue/Exit button" to="." method="_on_exit_button_pressed"]
