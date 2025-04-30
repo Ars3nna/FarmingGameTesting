@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+signal dialogue_finished
+
 @export var d_file: String
 var dialogue = []
 var current_dialogue_id = 0
@@ -16,6 +18,8 @@ func _ready() -> void:
 	dialogue = load_dialogue()
 
 func start() -> void:
+	get_tree().paused = true
+	
 	if close_script == true:
 		close_script = false
 		return
@@ -56,7 +60,10 @@ func _input(event: InputEvent) -> void:
 			first_dialogue = false
 			dialogue.remove_at(0)
 			current_dialogue_id = 0
-			close_script = true
+			
+			await  get_tree().create_timer(0.2).timeout
+			
+			emit_signal("dialogue_finished")
 		else:
 			next_script()
 		
