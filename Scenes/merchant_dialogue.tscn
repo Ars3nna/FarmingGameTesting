@@ -8,7 +8,6 @@ script = ExtResource("1_5p5do")
 d_file = "res://Dialogue/merchant_text.json"
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
-visible = false
 offset_left = 450.0
 offset_top = 648.0
 offset_right = 1521.0
@@ -35,3 +34,35 @@ offset_bottom = 260.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 34
 text = "Hello newcomer"
+
+[node name="Yes button rect" type="NinePatchRect" parent="."]
+offset_left = 769.0
+offset_top = 299.0
+offset_right = 1205.0
+offset_bottom = 435.0
+texture = ExtResource("2_n6mjj")
+
+[node name="Yes button" type="Button" parent="Yes button rect"]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 18.0
+offset_right = 375.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 45
+text = "Yes"
+
+[node name="No button rect" type="NinePatchRect" parent="."]
+offset_left = 769.0
+offset_top = 475.0
+offset_right = 1205.0
+offset_bottom = 611.0
+texture = ExtResource("2_n6mjj")
+
+[node name="No button" type="Button" parent="No button rect"]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 18.0
+offset_right = 375.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 45
+text = "No thanks"

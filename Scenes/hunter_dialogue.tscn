@@ -34,3 +34,21 @@ layout_mode = 2
 
 [node name="Button3" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
+
+[node name="Yes" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -48.0
+offset_right = 40.0
+offset_bottom = -26.0
+theme_override_font_sizes/font_size = 10
+text = "Yes"
+
+[node name="No" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -24.0
+offset_right = 39.0
+offset_bottom = -2.0
+theme_override_font_sizes/font_size = 10
+text = "No"
