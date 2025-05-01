@@ -60,11 +60,13 @@ func _input(event: InputEvent) -> void:
 			first_dialogue = false
 			dialogue.remove_at(0)
 			current_dialogue_id = 0
+			get_tree().paused = false
 			
 			await  get_tree().create_timer(0.2).timeout
 			
 			emit_signal("dialogue_finished")
 		else:
+			get_tree().paused = false
 			next_script()
 		
 func next_script():
@@ -82,4 +84,17 @@ func next_script():
 	$"Yes button rect/Yes button".disabled = false
 	$"No button rect/No button".disabled = false
 	current_dialogue_id += 1
+
+func _on_yes_button_pressed() -> void:
+	pass # Replace with function body.
+
+func _on_no_button_pressed() -> void:
+	close_dialogue()
 	
+func close_dialogue():
+	get_tree().paused = false
+	$NinePatchRect.visible = false
+	$"Yes button rect".visible = false
+	$"No button rect".visible = false
+	$"Yes button rect/Yes button".disabled = true
+	$"No button rect/No button".disabled = true
