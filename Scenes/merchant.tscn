@@ -7,8 +7,8 @@
 radius = 8.0
 height = 18.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_5785a"]
-radius = 26.1725
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ub3bt"]
+size = Vector2(62, 25)
 
 [node name="Merchant" type="StaticBody2D"]
 script = ExtResource("1_m8wlm")
@@ -26,8 +26,8 @@ shape = SubResource("CapsuleShape2D_kdy2a")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, 2)
-shape = SubResource("CircleShape2D_5785a")
+position = Vector2(-8, 22.5)
+shape = SubResource("RectangleShape2D_ub3bt")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
