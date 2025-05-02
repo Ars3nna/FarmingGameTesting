@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://dknromdilrbx"]
+
+[ext_resource type="Script" path="res://Scripts/inventory_items.gd" id="1_lqj5r"]
+[ext_resource type="Texture2D" uid="uid://cu0ftw04ibnwk" path="res://Assets/Tools/Bronze pickaxe.png" id="2_fr6ky"]
+
+[resource]
+script = ExtResource("1_lqj5r")
+name = "bronze_pickaxe"
+texture = ExtResource("2_fr6ky")

@@ -4,6 +4,8 @@ extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
+@export var inv: Inv
+
 var last_direction: Vector2 = Vector2.DOWN
 
 #Handles player movement

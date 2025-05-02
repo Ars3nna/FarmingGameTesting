@@ -1,7 +1,9 @@
-[gd_scene load_steps=41 format=3 uid="uid://d242dcpoh2c1b"]
+[gd_scene load_steps=43 format=3 uid="uid://d242dcpoh2c1b"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_6xm7n"]
 [ext_resource type="Texture2D" uid="uid://bbutd80u8tfqr" path="res://Assets/Players and NPC/Player.png" id="1_h8vd3"]
+[ext_resource type="Resource" uid="uid://ruojbpekxnck" path="res://Inventory/player_inventory.tres" id="2_ltiw6"]
+[ext_resource type="PackedScene" uid="uid://c6nb1b0guomi2" path="res://Inventory/inventory_ui.tscn" id="4_y6fkj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4c5aj"]
 atlas = ExtResource("1_h8vd3")
@@ -294,6 +296,7 @@ size = Vector2(11, 17)
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_6xm7n")
+inv = ExtResource("2_ltiw6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_f6yqe")
@@ -306,3 +309,10 @@ shape = SubResource("RectangleShape2D_r8v51")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
+
+[node name="Inventory UI" parent="." instance=ExtResource("4_y6fkj")]
+offset_left = -88.0
+offset_top = -114.0
+offset_right = 0.0
+offset_bottom = -46.0
+scale = Vector2(2, 2)
