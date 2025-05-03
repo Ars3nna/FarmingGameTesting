@@ -34,3 +34,8 @@ func _physics_process(delta: float) -> void:
 	velocity = direction * speed
 	
 	move_and_slide()
+
+
+func collect(item):
+	inv.intsert(item)
+	

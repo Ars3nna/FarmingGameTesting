@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck87nh16f5ojl"]
+
+[ext_resource type="Texture2D" uid="uid://mmy1b7ue40tq" path="res://Assets/World tiles/Outdoor_Decor_Free.png" id="1_0yjp8"]
+[ext_resource type="Script" path="res://Scripts/carrot.gd" id="1_7ml7o"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5n63d"]
+radius = 21.0
+
+[node name="Carrot" type="Node2D"]
+script = ExtResource("1_7ml7o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0yjp8")
+region_enabled = true
+region_rect = Rect2(64.0845, 47.3946, 16.4614, 17.0596)
+
+[node name="Pickup area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pickup area"]
+shape = SubResource("CircleShape2D_5n63d")
