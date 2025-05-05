@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkkkqvowjsosg"
-path="res://.godot/imported/Iron pickaxe.png-5063e9c4049f929bf84454fdba66f4aa.ctex"
+uid="uid://chffvnttjl017"
+path="res://.godot/imported/Bronze hoe.png-886f3c67e9ca675afc70f670cd890a50.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tools/Iron pickaxe.png"
-dest_files=["res://.godot/imported/Iron pickaxe.png-5063e9c4049f929bf84454fdba66f4aa.ctex"]
+source_file="res://Assets/Tools/Hoe/Bronze hoe.png"
+dest_files=["res://.godot/imported/Bronze hoe.png-886f3c67e9ca675afc70f670cd890a50.ctex"]
 
 [params]
 

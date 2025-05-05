@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://doqoyrmo688pk"]
+
+[ext_resource type="Texture2D" uid="uid://djqtob3h6bvj2" path="res://Assets/Plants/Crops/Carrot/Carrot growth1.png" id="1_fxihg"]
+[ext_resource type="Script" path="res://Scripts/Crops and plants/carrot_growth.gd" id="2_tjol7"]
+
+[node name="Carrot growth" type="Sprite2D"]
+texture = ExtResource("1_fxihg")
+region_rect = Rect2(53.3084, 21.7692, 6.573, 6.70195)
+script = ExtResource("2_tjol7")

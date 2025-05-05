@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cu0ftw04ibnwk"
-path="res://.godot/imported/Bronze pickaxe.png-855c78069b5c5cdeaf7b5910cf986241.ctex"
+uid="uid://djqtob3h6bvj2"
+path="res://.godot/imported/Carrot growth1.png-159e935a824d1c8513dc85b822e5241d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tools/Bronze pickaxe.png"
-dest_files=["res://.godot/imported/Bronze pickaxe.png-855c78069b5c5cdeaf7b5910cf986241.ctex"]
+source_file="res://Assets/Plants/Crops/Carrot/Carrot growth1.png"
+dest_files=["res://.godot/imported/Carrot growth1.png-159e935a824d1c8513dc85b822e5241d.ctex"]
 
 [params]
 

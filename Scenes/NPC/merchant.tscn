@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cjxw86rtkjk6e"]
 
-[ext_resource type="Script" path="res://Scripts/merchant.gd" id="1_m8wlm"]
+[ext_resource type="Script" path="res://Scripts/NPC/merchant.gd" id="1_m8wlm"]
 [ext_resource type="Texture2D" uid="uid://c3i7j1w36oq8x" path="res://Assets/Players and NPC/characters.png" id="1_tlk3a"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kdy2a"]

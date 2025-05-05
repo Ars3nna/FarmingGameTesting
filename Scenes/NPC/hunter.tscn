@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://dtvn4myvbds5i"]
 
-[ext_resource type="Script" path="res://Scripts/hunter.gd" id="1_r8xdm"]
+[ext_resource type="Script" path="res://Scripts/NPC/hunter.gd" id="1_r8xdm"]
 [ext_resource type="Texture2D" uid="uid://c3i7j1w36oq8x" path="res://Assets/Players and NPC/characters.png" id="1_ro66t"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_teapa"]

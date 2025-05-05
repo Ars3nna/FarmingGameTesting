@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dt5l5o2005xij"]
 
-[ext_resource type="Script" path="res://Scripts/hunter_dialogue.gd" id="1_5td20"]
+[ext_resource type="Script" path="res://Scripts/NPC/hunter_dialogue.gd" id="1_5td20"]
 
 [node name="Hunter dialogue" type="Control"]
 layout_mode = 3

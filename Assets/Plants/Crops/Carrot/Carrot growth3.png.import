@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvc6hh6bcx0u4"
-path="res://.godot/imported/Diamond Pickaxe.png-b8ade7e811abf0e47d4c5bca86d0346e.ctex"
+uid="uid://dayot1w80cr36"
+path="res://.godot/imported/Carrot growth3.png-ccc388a766e5fa269e942c2637d860e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tools/Diamond Pickaxe.png"
-dest_files=["res://.godot/imported/Diamond Pickaxe.png-b8ade7e811abf0e47d4c5bca86d0346e.ctex"]
+source_file="res://Assets/Plants/Crops/Carrot/Carrot growth3.png"
+dest_files=["res://.godot/imported/Carrot growth3.png-ccc388a766e5fa269e942c2637d860e7.ctex"]
 
 [params]
 

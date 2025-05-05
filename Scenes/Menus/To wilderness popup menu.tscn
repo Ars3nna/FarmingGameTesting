@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://damufuo6c3wby"]
 
-[ext_resource type="Script" path="res://Scripts/to_wilderness_popup_menu.gd" id="1_cvli5"]
+[ext_resource type="Script" path="res://Scripts/Popup menus/to_wilderness_popup_menu.gd" id="1_cvli5"]
 
 [node name="To wilderness popup menu" type="Control"]
 process_mode = 3

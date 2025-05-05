@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwy0758e1gn67"]
+
+[ext_resource type="Texture2D" uid="uid://jf1duc6wek5i" path="res://Assets/Plants/Crops/Carrot/Carrot seeds.png" id="1_lay5f"]
+
+[node name="Carrot seeds" type="Sprite2D"]
+texture = ExtResource("1_lay5f")
