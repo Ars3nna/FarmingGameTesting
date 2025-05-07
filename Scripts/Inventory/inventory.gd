@@ -4,5 +4,5 @@ class_name Inv
 
 @export var slots: Array[InvSlot]
 
-func intsert(item: InvItem):
+func insert(item: InvItem):
 	pass

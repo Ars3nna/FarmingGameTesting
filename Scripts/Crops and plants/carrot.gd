@@ -1,5 +1,7 @@
 extends Node2D
 
+@export var item: InvItem
+
 var player_in_area = false
 
 func _ready() -> void:

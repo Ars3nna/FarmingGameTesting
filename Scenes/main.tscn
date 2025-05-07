@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 [gd_scene load_steps=34 format=4 uid="uid://ba7momtnid6x6"]
+=======
+[gd_scene load_steps=32 format=4 uid="uid://ba7momtnid6x6"]
+>>>>>>> parent of 0aceb2c (Added inventory UI. Still needs work)
 
 [ext_resource type="PackedScene" uid="uid://d242dcpoh2c1b" path="res://Scenes/player.tscn" id="1_4jxur"]
 [ext_resource type="Texture2D" uid="uid://iwpjur8820kc" path="res://Assets/Tilemaps/main_tile_set.png" id="2_sr10f"]
 [ext_resource type="Texture2D" uid="uid://bpolo0x40x1ll" path="res://Assets/Tilemaps/world_tileset.png" id="3_4y1tn"]
 [ext_resource type="Texture2D" uid="uid://mmy1b7ue40tq" path="res://Assets/World tiles/Outdoor_Decor_Free.png" id="4_p5f7a"]
 [ext_resource type="Texture2D" uid="uid://b2qmt6qjirwbd" path="res://Assets/Tilemaps/world_tile_set.png" id="5_yck4j"]
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://Scripts/Popup menus/path_to_wilderness.gd" id="6_u1cel"]
 [ext_resource type="PackedScene" uid="uid://damufuo6c3wby" path="res://Scenes/Menus/To wilderness popup menu.tscn" id="7_qqvb2"]
 [ext_resource type="PackedScene" uid="uid://cjxw86rtkjk6e" path="res://Scenes/NPC/merchant.tscn" id="8_5sqnk"]
@@ -13,6 +18,14 @@
 [ext_resource type="PackedScene" uid="uid://dt5l5o2005xij" path="res://Scenes/NPC/hunter_dialogue.tscn" id="10_3dd6o"]
 [ext_resource type="PackedScene" uid="uid://cigavidycwtp" path="res://Inventory/inv_ui_slot.tscn" id="12_g13yy"]
 [ext_resource type="PackedScene" uid="uid://ck87nh16f5ojl" path="res://Scenes/Crops/carrot.tscn" id="13_tt3lw"]
+=======
+[ext_resource type="Script" path="res://Scripts/path_to_wilderness.gd" id="6_u1cel"]
+[ext_resource type="PackedScene" uid="uid://damufuo6c3wby" path="res://Scenes/To wilderness popup menu.tscn" id="7_qqvb2"]
+[ext_resource type="PackedScene" uid="uid://cjxw86rtkjk6e" path="res://Scenes/merchant.tscn" id="8_5sqnk"]
+[ext_resource type="PackedScene" uid="uid://d1kx1tn3vey6w" path="res://Scenes/merchant_dialogue.tscn" id="8_xuafo"]
+[ext_resource type="PackedScene" uid="uid://dtvn4myvbds5i" path="res://Scenes/hunter.tscn" id="9_cpbq4"]
+[ext_resource type="PackedScene" uid="uid://dt5l5o2005xij" path="res://Scenes/hunter_dialogue.tscn" id="10_3dd6o"]
+>>>>>>> parent of 0aceb2c (Added inventory UI. Still needs work)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ag1yd"]
 resource_name = "Background"
@@ -1472,7 +1485,7 @@ scale = Vector2(0.9, 0.9)
 process_mode = 3
 
 [node name="Hunter" parent="." instance=ExtResource("9_cpbq4")]
-position = Vector2(50, -207)
+position = Vector2(-142, -106)
 scale = Vector2(0.8, 0.8)
 
 [node name="Hunter dialogue canvas" type="CanvasLayer" parent="."]
@@ -1486,9 +1499,5 @@ scale = Vector2(0.5, 0.5)
 
 [node name="Player" parent="." instance=ExtResource("1_4jxur")]
 position = Vector2(92, -125)
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Inv UI slot" parent="CanvasLayer" instance=ExtResource("12_g13yy")]
 
 [connection signal="body_entered" from="Path to wilderness" to="Path to wilderness" method="_on_body_entered"]

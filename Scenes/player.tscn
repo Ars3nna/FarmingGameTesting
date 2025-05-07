@@ -296,6 +296,7 @@ size = Vector2(11, 17)
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_6xm7n")
+speed = null
 inv = ExtResource("2_ltiw6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
